@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+
+
+    <title>Calc</title>
+  </head>
+  <body>
+    <h1 class="text-center">Shirt Production Calculator</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="container">
+              <h3>Sizes</h3>
+              <div class="row mt-2 justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="smNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="smNum" name="smNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="smNum">
+                    <br>
+                  </div>   
+                     <label for="smNum">SM Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000"  id="smCost" name="smCost" class="quantity-field">
+                     <span class="align-self-center"><label for="smCost">SM Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="mdNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="mdNum" name="mdNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="mdNum">
+                    <br>
+                  </div>   
+                     <label for="mdNum">MD Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000"  id="mdCost" name="mdCost" class="quantity-field">
+                     <span class="align-self-center"><label for="mdCost">MD Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="lgNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="lgNum" name="lgNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="lgNum">
+                    <br>
+                  </div>   
+                     <label for="lgNum">LG Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000"  id="lgCost" name="lgCost" class="quantity-field">
+                     <span class="align-self-center"><label for="lgCost">LG Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="xlNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="xlNum" name="xlNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="xlNum">
+                    <br>
+                  </div>   
+                     <label for="xlNum">XL Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000"  id="xlCost" name="xlCost" class="quantity-field">
+                     <span class="align-self-center"><label for="xlCost">XL Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="2xlNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="2xlNum" name="2xlNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="2xlNum">
+                    <br>
+                  </div>   
+                     <label for="2xlNum">2XL Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000"  id="2xlCost" name="2xlCost" class="quantity-field">
+                     <span class="align-self-center"><label for="2xlCost">2XL Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="3xlNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="3xlNum" name="3xlNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="3xlNum">
+                    <br>
+                  </div>   
+                     <label for="3xlNum">3XL Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000"  id="3xlCost" name="3xlCost" class="quantity-field">
+                     <span class="align-self-center"><label for="3xlCost">3XL Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <h3>Design Elements</h3>
+              <div class="row mt-2 justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="placements">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="placements" name="placements" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="placements">
+                    <br>
+                  </div>   
+                     <label for="placements">Placements ($1.50 per)</label>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="colorNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="colorNum" name="colorNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="colorNum">
+                  </div>     
+                    <label for="colorNum">Colors ($1.50 per)</label>
+                </div>
+              </div>
+
+              <h3>Production</h3>
+              <div class="row mt-2 justify-content-center text-center">
+                <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" data-field="additionalScreeningNum">
+                    <input type="number" step="1" min="0" max="1000" value="0" id="additionalScreeningNum" name="additionalScreeningNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="additionalScreeningNum">
+                  </div>     
+                    <label for="additionalScreeningNum">Additional Screenings ($60 per)</label>
+                </div>
+              </div>
+
+              <h3>Preparation</h3>
+              <div class="row mt-2 text-center">
+                <div class="col">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000" id="markup" name="markup" class="quantity-field">
+                    <span class="align-self-center"><label for="markup">% Markup</label></span>
+                  </div>   
+                </div>
+              </div>
+
+              <div class="row m-2">
+                <div class="col justify-content-center text-center">
+                  <button class="btn btn-primary" onclick="calcCost();">Calculate</button>
+                </div>
+              </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="vl">
+        <div class="ml-1">
+          <h2>Final Cost</h2>
+          <p id="cost"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/number-buttons.js"></script>
+    <script src="js/calc.js"></script>
+
+  </body>
+</html>
