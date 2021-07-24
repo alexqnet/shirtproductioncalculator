@@ -41,7 +41,7 @@ function calcCost () {
 	var blankLineItem = '<p class="ml-2" ></p>';
 	var initialLineItem = '<p class="ml-2" >Initial Screening Cost: $75</p>';
 	var placementsLineItem = '<p class="ml-2" >' +  placements + ' placements at $1.50 per = $' + placements * 1.5 + '</p>';
-	var colorLineItem = '<p class="ml-2" >' +  colorNum + ' placements at $1.50 per = $' + colorNum * 1.5 + '</p>';
+	var colorLineItem = '<p class="ml-2" >' +  colorNum + ' colors at $1.50 per = $' + colorNum * 1.5 + '</p>';
 	var additionalScreeningLineItem = '<p class="ml-2" >' +  additionalScreeningNum + ' additional screenings at $60 per = $' + additionalScreeningNum * 60 + '</p>';
 	var markupLineItem = '<p class="ml-2" >Markup of ' + markup + '% = $' + markupLineCost + '</p>';
 	var totalLineItem = '<p class="ml-2" >Total = $' + total + '</p>';
