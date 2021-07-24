@@ -1,0 +1,14 @@
+input { 
+    text-align: center; 
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+    .input-group {
+        padding: 20px;
+    }
+}
