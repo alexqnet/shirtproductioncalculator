@@ -46,7 +46,7 @@ function calcCost () {
 	var markupLineItem = '<p class="ml-2" >Markup of ' + markup + '% = $' + markupLineCost + '</p>';
 	var totalLineItem = '<p class="ml-2" >Total = $' + total + '</p>';
 
-	document.getElementById("cost").innerHTML =  smLineItem + mdLineItem + lgLineItem + xlLineItem + xxlLineItem + xxxlLineItem + initialLineItem + placementsLineItem + colorLineItem + additionalScreeningLineItem + markupLineItem + totalLineItem;
+	document.getElementById("cost").innerHTML =  "<text area>" + smLineItem + mdLineItem + lgLineItem + xlLineItem + xxlLineItem + xxxlLineItem + initialLineItem + placementsLineItem + colorLineItem + additionalScreeningLineItem + markupLineItem + totalLineItem + "</text area>";
 
 }
 
