@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/button.css">
@@ -16,7 +17,7 @@
     <title>Calc</title>
   </head>
   <body>
-    <h1 class="text-center">Shirt Production Calculator</h1>
+    <h1 class="text-center">T-Shirt Quote Calculator</h1>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-7">
@@ -25,17 +26,17 @@
               <div class="row mt-2 justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="smNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="smNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="smNum" name="smNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="smNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="smNum">
                     <br>
                   </div>   
-                     <label for="smNum">SM Quantity</label>
+                     <label for="smNum">S Quantity</label>
                 </div>
                   <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="number" step="1" min="0" max="1000"  id="smCost" name="smCost" class="quantity-field">
-                     <span class="align-self-center"><label for="smCost">SM Cost (Per Shirt)</label></span>  
+                    <input type="number" step="1" min="0" max="1000" id="smCost" name="smCost" class="quantity-field">
+                     <span class="align-self-center"><label for="smCost">S Cost (Per Shirt)</label></span>  
                   </div>  
                 </div>
               </div>
@@ -43,17 +44,17 @@
               <div class="row justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="mdNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="mdNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="mdNum" name="mdNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="mdNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="mdNum">
                     <br>
                   </div>   
-                     <label for="mdNum">MD Quantity</label>
+                     <label for="mdNum">M Quantity</label>
                 </div>
                   <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="number" step="1" min="0" max="1000"  id="mdCost" name="mdCost" class="quantity-field">
-                     <span class="align-self-center"><label for="mdCost">MD Cost (Per Shirt)</label></span>  
+                    <input type="number" step="1" min="0" max="1000" id="mdCost" name="mdCost" class="quantity-field">
+                     <span class="align-self-center"><label for="mdCost">M Cost (Per Shirt)</label></span>  
                   </div>  
                 </div>
               </div>
@@ -61,17 +62,17 @@
               <div class="row justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="lgNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="lgNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="lgNum" name="lgNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="lgNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="lgNum">
                     <br>
                   </div>   
-                     <label for="lgNum">LG Quantity</label>
+                     <label for="lgNum">L Quantity</label>
                 </div>
                   <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="number" step="1" min="0" max="1000"  id="lgCost" name="lgCost" class="quantity-field">
-                     <span class="align-self-center"><label for="lgCost">LG Cost (Per Shirt)</label></span>  
+                    <input type="number" step="1" min="0" max="1000" id="lgCost" name="lgCost" class="quantity-field">
+                     <span class="align-self-center"><label for="lgCost">L Cost (Per Shirt)</label></span>  
                   </div>  
                 </div>
               </div>
@@ -79,16 +80,16 @@
               <div class="row justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="xlNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="xlNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="xlNum" name="xlNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="xlNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="xlNum">
                     <br>
                   </div>   
                      <label for="xlNum">XL Quantity</label>
                 </div>
                   <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="number" step="1" min="0" max="1000"  id="xlCost" name="xlCost" class="quantity-field">
+                    <input type="number" step="1" min="0" max="1000" id="xlCost" name="xlCost" class="quantity-field">
                      <span class="align-self-center"><label for="xlCost">XL Cost (Per Shirt)</label></span>  
                   </div>  
                 </div>
@@ -97,16 +98,16 @@
               <div class="row justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="2xlNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="2xlNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="2xlNum" name="2xlNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="2xlNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="2xlNum">
                     <br>
                   </div>   
                      <label for="2xlNum">2XL Quantity</label>
                 </div>
                   <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="number" step="1" min="0" max="1000"  id="2xlCost" name="2xlCost" class="quantity-field">
+                    <input type="number" step="1" min="0" max="1000" id="2xlCost" name="2xlCost" class="quantity-field">
                      <span class="align-self-center"><label for="2xlCost">2XL Cost (Per Shirt)</label></span>  
                   </div>  
                 </div>
@@ -115,17 +116,35 @@
               <div class="row justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="3xlNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="3xlNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="3xlNum" name="3xlNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="3xlNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="3xlNum">
                     <br>
                   </div>   
                      <label for="3xlNum">3XL Quantity</label>
                 </div>
                   <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="number" step="1" min="0" max="1000"  id="3xlCost" name="3xlCost" class="quantity-field">
+                    <input type="number" step="1" min="0" max="1000" id="3xlCost" name="3xlCost" class="quantity-field">
                      <span class="align-self-center"><label for="3xlCost">3XL Cost (Per Shirt)</label></span>  
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                  <div class="input-group justify-content-center">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="customNum">
+                    <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="customNum" name="customNum" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="customNum">
+                    <br>
+                  </div>   
+                     <label for="customNum">Custom Quantity</label>
+                </div>
+                  <div class="col-md-6">
+                  <div class="input-group justify-content-center">
+                    <input type="number" step="1" min="0" max="1000" id="customCost" name="customCost" class="quantity-field">
+                     <span class="align-self-center"><label for="customCost">Custom Cost (Per Shirt)</label></span>  
                   </div>  
                 </div>
               </div>
@@ -134,9 +153,9 @@
               <div class="row mt-2 justify-content-center text-center">
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="placements">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="placements">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="placements" name="placements" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="placements">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="placements">
                     <br>
                   </div>   
                      <label for="placements">Placements ($1.50 per)</label>
@@ -144,9 +163,9 @@
 
                 <div class="col-md-4">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="colorNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="colorNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="colorNum" name="colorNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="colorNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="colorNum">
                   </div>     
                     <label for="colorNum">Colors ($1.50 per)</label>
                 </div>
@@ -156,9 +175,9 @@
               <div class="row mt-2 justify-content-center text-center">
                 <div class="col-md-6">
                   <div class="input-group justify-content-center">
-                    <input type="button" value="-" class="button-minus" data-field="additionalScreeningNum">
+                    <input type="button" value="-" class="button-minus" tabindex="-1" data-field="additionalScreeningNum">
                     <input type="number" onfocus="this.select();" onmouseup="return false;" step="1" min="0" max="1000" value="0" id="additionalScreeningNum" name="additionalScreeningNum" class="quantity-field">
-                    <input type="button" value="+" class="button-plus" data-field="additionalScreeningNum">
+                    <input type="button" value="+" class="button-plus" tabindex="-1" data-field="additionalScreeningNum">
                   </div>     
                     <label for="additionalScreeningNum">Additional Screenings ($60 per)</label>
                 </div>
@@ -179,13 +198,37 @@
                   <button class="btn btn-primary" onclick="calcCost();">Calculate</button>
                 </div>
               </div>
+
+              <h3>Client</h3>
+              <div class="row my-2 text-center">
+                <div class="col">
+                  <div class="input-group justify-content-center">
+                    <span class="align-self-center">Client Name: <label for="clientName"></label></span>
+                    <input type="text" id="clientName" name="clientName">
+                  </div>   
+                </div>
+              </div>
+
+              <div class="row m-2">
+                <div class="col justify-content-center text-center">
+                  <button class="btn btn-primary" onclick="addClientName();">Add Client Info</button>
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col justify-content-center text-center" id="emailButton">
+                  <a class="btn btn-dark" href="mailto:">Email Results</a>
+                </div>
+              </div>
+
+
       </div>
     </div>
     <div class="col-lg-3">
       <div class="vl">
-        <div class="ml-1">
+        <div class="ml-1" id="results">
           <h2>Final Cost</h2>
-          <p id="cost"></p>
+          <div class="ml-2"><p><span id="clientLabel"></span><span id="client"></span><span id="date"></span></p></div>
+          <div class="ml-2"><p id="cost"></p></div>
         </div>
       </div>
     </div>
